@@ -9,7 +9,9 @@ use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Stewart\Contracts\App\AppId;
 use Stewart\Contracts\Selector\Selector;
+use Stewart\Contracts\Stream\SubscriptionScope;
 use Stewart\Contracts\Trigger\HaTrigger;
+use Stewart\Contracts\Trigger\TriggerSpec;
 use Stewart\Runtime\Dispatch\RegisteredSubscription;
 use Stewart\Runtime\Ipc\Message\Subscribe;
 use Stewart\Runtime\Ipc\Message\SubscribeTrigger;
@@ -19,8 +21,6 @@ use Stewart\Runtime\Model\SubscriptionId;
 use Stewart\Runtime\Model\SubscriptionKind;
 use Stewart\Runtime\Tests\Fixtures\Ipc\NullTransport;
 use Stewart\Runtime\Worker\BrokerSubscriptions;
-use Stewart\Support\Stream\SubscriptionScope;
-use Stewart\Support\Wire\TriggerSpec;
 use Stewart\Testing\Logging\RecordingLogger;
 
 #[CoversClass(BrokerSubscriptions::class)]

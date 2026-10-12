@@ -6,6 +6,7 @@ namespace Stewart\Runtime\Tests\Unit\Ipc;
 
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
+use Stewart\Contracts\Exception\JsonShapeError;
 use Stewart\Contracts\Exposure\BinarySensorConfig;
 use Stewart\Contracts\Exposure\BinarySensorDeviceClass;
 use Stewart\Contracts\Exposure\ButtonConfig;
@@ -25,7 +26,6 @@ use Stewart\Contracts\Exposure\TextConfig;
 use Stewart\Contracts\Exposure\TextMode;
 use Stewart\Contracts\Exposure\TimeConfig;
 use Stewart\Runtime\Ipc\Wire\ExposedEntityConfigConverter;
-use Stewart\Support\Exception\JsonShapeError;
 use Stewart\Testing\Exception\AssertsReason;
 
 #[CoversClass(ExposedEntityConfigConverter::class)]

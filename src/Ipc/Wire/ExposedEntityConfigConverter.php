@@ -7,6 +7,7 @@ namespace Stewart\Runtime\Ipc\Wire;
 use BackedEnum;
 use LogicException;
 use Stewart\Contracts\Exception\ExposureException;
+use Stewart\Contracts\Exception\JsonShapeException;
 use Stewart\Contracts\Exposure\BinarySensorConfig;
 use Stewart\Contracts\Exposure\BinarySensorDeviceClass;
 use Stewart\Contracts\Exposure\ButtonConfig;
@@ -29,7 +30,6 @@ use Stewart\Contracts\Exposure\TextConfig;
 use Stewart\Contracts\Exposure\TextMode;
 use Stewart\Contracts\Exposure\TimeConfig;
 use Stewart\Runtime\Json\ValueConverter;
-use Stewart\Support\Exception\JsonShapeException;
 
 final readonly class ExposedEntityConfigConverter implements ValueConverter
 {

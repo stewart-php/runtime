@@ -6,6 +6,7 @@ namespace Stewart\Runtime\Broker\Message;
 
 use Psr\Log\LoggerInterface;
 use Stewart\Client\HaClient;
+use Stewart\Contracts\Event\EventPayload;
 use Stewart\Contracts\Exception\EventFireException;
 use Stewart\Runtime\Broker\HaCallSlots;
 use Stewart\Runtime\Broker\HaSession;
@@ -14,7 +15,6 @@ use Stewart\Runtime\Config\ServiceCallPolicy;
 use Stewart\Runtime\Ipc\Message\EventFireRequest;
 use Stewart\Runtime\Ipc\Message\EventFireResult;
 use Stewart\Runtime\Ipc\Message\WorkerMessage;
-use Stewart\Support\Wire\EventPayload;
 
 /** @implements WorkerMessageHandler<EventFireRequest> */
 final readonly class EventFireRequestHandler implements WorkerMessageHandler

@@ -6,6 +6,7 @@ namespace Stewart\Runtime\Worker\Context;
 
 use Amp\CancelledException;
 use Stewart\Contracts\Exception\ServiceCallException;
+use Stewart\Contracts\Service\ServiceFields;
 use Stewart\Contracts\Service\ServiceResponse;
 use Stewart\Contracts\Service\ServiceTarget;
 use Stewart\Contracts\State\EventContext;
@@ -18,7 +19,6 @@ use Stewart\Runtime\Model\ResourceScope;
 use Stewart\Runtime\Worker\ConnectionStatus;
 use Stewart\Runtime\Worker\PendingRequests;
 use Stewart\Support\Time\Deadlines;
-use Stewart\Support\Wire\ServiceFields;
 use Throwable;
 
 final readonly class ServiceCaller

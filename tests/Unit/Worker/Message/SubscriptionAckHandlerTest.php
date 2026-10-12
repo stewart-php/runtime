@@ -9,6 +9,7 @@ use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Stewart\Contracts\App\AppId;
 use Stewart\Contracts\Selector\Selector;
+use Stewart\Contracts\Stream\SubscriptionScope;
 use Stewart\Contracts\Subscription;
 use Stewart\Runtime\Dispatch\LocalDispatcher;
 use Stewart\Runtime\Ipc\Message\SubscriptionAck;
@@ -17,7 +18,6 @@ use Stewart\Runtime\Model\SubscriptionId;
 use Stewart\Runtime\Model\SubscriptionKind;
 use Stewart\Runtime\Tests\Fixtures\Worker\RecordingDispatchListener;
 use Stewart\Runtime\Worker\Message\SubscriptionAckHandler;
-use Stewart\Support\Stream\SubscriptionScope;
 
 #[CoversClass(SubscriptionAckHandler::class)]
 final class SubscriptionAckHandlerTest extends TestCase

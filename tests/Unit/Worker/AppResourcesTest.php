@@ -10,6 +10,7 @@ use Psr\Log\NullLogger;
 use Stewart\Contracts\App\AppId;
 use Stewart\Contracts\Schedule\ScheduledTask;
 use Stewart\Contracts\Selector\Selector;
+use Stewart\Contracts\Stream\SubscriptionScope;
 use Stewart\Contracts\Subscription;
 use Stewart\Contracts\Time\Duration;
 use Stewart\Runtime\Model\ResourceScope;
@@ -18,7 +19,6 @@ use Stewart\Runtime\Tests\Fixtures\Schedule\WorkerSchedulerFixture;
 use Stewart\Runtime\Tests\Fixtures\Worker\AppResourcesFixture;
 use Stewart\Runtime\Worker\AppResources;
 use Stewart\Sun\UnlocatedSunCalendar;
-use Stewart\Support\Stream\SubscriptionScope;
 
 #[CoversClass(AppResources::class)]
 final class AppResourcesTest extends TestCase

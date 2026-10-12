@@ -10,6 +10,7 @@ use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use Stewart\Contracts\App\AppId;
 use Stewart\Contracts\Entity\EntityId;
+use Stewart\Contracts\Exception\JsonShapeException;
 use Stewart\Contracts\Exception\ServiceCallException;
 use Stewart\Contracts\State\Collection\EntityStateCollection;
 use Stewart\Contracts\State\EntityState;
@@ -39,7 +40,6 @@ use Stewart\Runtime\Model\ResourceScope;
 use Stewart\Runtime\Model\SubscriptionId;
 use Stewart\Runtime\Tests\Fixtures\Ipc\IpcMessageSamples;
 use Stewart\Runtime\Tests\Fixtures\Wire\BrokenDurationConverter;
-use Stewart\Support\Exception\JsonShapeException;
 use Stewart\Testing\Exception\AssertsReason;
 
 #[CoversNamespace('Stewart\Runtime\Ipc\Wire')]

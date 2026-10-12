@@ -11,6 +11,7 @@ use Stewart\Contracts\Exception\ExceptionReason;
 use Stewart\Contracts\Exception\StewartException;
 use Stewart\Contracts\Exposure\EntityExposure;
 use Stewart\Contracts\HaContext;
+use Stewart\Contracts\Identity\StewartIdentity;
 use Stewart\Contracts\Mqtt\Mqtt;
 use Stewart\Contracts\Registry\RegistryEditor;
 use Stewart\Contracts\Schedule\Scheduler;
@@ -189,6 +190,7 @@ final readonly class AppContainerBuilder
 
         $synthetics = [
             Clock::class => $runtime->clock,
+            StewartIdentity::class => $runtime->identity,
             SunCalendar::class => $runtime->sunCalendar,
             self::LOGGER => $runtime->logger,
             self::CONTEXT => $runtime->context,

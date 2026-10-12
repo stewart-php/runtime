@@ -9,6 +9,7 @@ use Amp\Future;
 use Amp\TimeoutCancellation;
 use Closure;
 use PHPUnit\Framework\Assert;
+use Stewart\Contracts\State\Collection\StateChangeCollection;
 use Stewart\Contracts\State\StateChange;
 use Stewart\Contracts\Time\Duration;
 use Stewart\Runtime\Broker\WorkerProcess;
@@ -19,7 +20,6 @@ use Stewart\Runtime\Ipc\Message\StateChangeBatch;
 use Stewart\Runtime\Ipc\Message\StateSnapshot;
 use Stewart\Runtime\Ipc\Wire\EntityStatesFragment;
 use Stewart\Runtime\Ipc\Wire\StateChangesFragment;
-use Stewart\Support\State\Collection\StateChangeCollection;
 
 use function Amp\async;
 
